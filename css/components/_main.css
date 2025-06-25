@@ -1,0 +1,8 @@
+.uk__text {
+    max-width: 670px;
+}
+
+.favorite {
+    display: flex;
+    justify-content: space-between;
+}

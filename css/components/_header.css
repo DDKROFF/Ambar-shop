@@ -1,0 +1,25 @@
+.header {
+    box-shadow: -10px -17px 15px 20px rgb(0 0 0);
+}
+
+.header__name {
+    display: flex;
+    max-height: 85px;
+    height: 85px;
+    justify-content: end;
+    padding: 0 70px 0;
+    margin-bottom: 5px;
+}
+
+.nav__list {
+    display: flex;
+    max-height: 65px;
+    height: 85px;
+    max-width: 1750px;
+    background-color: var(--brown);
+    margin: 0 0 0 auto;
+    color: var(--orange);
+    align-items: center;
+    gap: 70px;
+    padding-left: 70px;
+}

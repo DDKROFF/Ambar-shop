@@ -1,0 +1,35 @@
+.html {
+    overflow-x: hidden;
+}
+
+.body {
+    background-color: white;
+    color: var(--brown);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: 'Times New Roman', 'Times', 'serif';
+    color: var(--brown);
+}
+
+.container {
+    max-width: 1530px;
+    margin: 120px auto auto;
+    padding: 0 15px;
+}
+
+.indent {
+    margin-bottom: 150px;
+}
+
+.section__name {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.text {
+    font-size: 30px;
+    font-weight: 400;
+}
