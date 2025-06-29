@@ -121,3 +121,95 @@
     border-color: var(--orange);
     box-shadow: 0 0 5px rgba(248, 236, 61, 0.5);
 }
+
+@media (max-width: 1440px) {
+    .x__icon {
+        left: 653px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .x__icon {
+        left: 540px;
+    }
+}
+
+@media (max-width: 425px) {
+    .x__icon {
+        top: 36px;
+        height: 35px;
+        left: 323px;
+    }
+    .modal {
+        border-radius: 20px;
+        padding: 50px 20px 20px 20px;
+    }
+    .delete {
+        border-radius: 11px;
+        font-size: 30px;
+        padding: 0 14px;
+    }
+    .send {
+        border-radius: 11px;
+        font-size: 30px;
+        padding: 0 14px;
+    }
+    .input {
+        max-width: 370px;
+    }
+    .input__area {
+        font-size: 13px;
+        border-radius: 12px;
+    }
+    .input-label-с {
+        font-size: 22px;
+    }
+    .modal__label {
+        font-size: 22px;
+        margin: 0 auto 5px 10px;
+    }
+    .modal__field {
+        font-size: 13px;
+            border-radius: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .x__icon {
+        top: 36px;
+        height: 30px;
+        left: 260px;
+    }
+    .modal {
+        border-radius: 20px;
+        padding: 50px 20px 20px 20px;
+    }
+    .delete {
+        border-radius: 11px;
+        font-size: 25px;
+        padding: 0 10px;
+    }
+    .send {
+        border-radius: 11px;
+        font-size: 25px;
+        padding: 0 10px;
+    }
+    .input {
+        max-width: 300px;
+    }
+    .input__area {
+        font-size: 13px;
+        border-radius: 12px;
+    }
+    .input-label-с {
+        font-size: 22px;
+    }
+    .modal__label {
+        font-size: 22px;
+        margin: 0 auto 5px 10px;
+    }
+    .modal__field {
+        font-size: 13px;
+            border-radius: 12px;
+    }
+}
