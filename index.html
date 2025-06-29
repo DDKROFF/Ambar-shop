@@ -13,13 +13,21 @@
 </head>
 
 <body>
+
+    <!--Шапка-->
+
     <header class="header">
-        <div class="header__name"> <img src="images/icons/Лого.svg"> </div>
+        <div class="header__name">
+            <div class="menu-btn" type="button">
+                <div class="menu-btn__burger"></div>
+            </div>
+            <img src="images/icons/Лого.svg">
+        </div>
         <ul class="nav__list">
-            <ul class="nav__link">Список комбикорма</ul>
-            <ul class="nav__link">О нас</ul>
-            <ul class="nav__link">Связатся с нами</ul>
-            <ul class="nav__link">Доставка</ul>
+            <a href="index.html#feed"><li class="nav__link">Список комбикорма</li></a>
+            <a href="index.html#aboutUs"><li class="nav__link">О нас</li></a>
+            <a href=""><li class="nav__link">Связаться с нами</li></a>
+            <a href=""><li class="nav__link">Доставка</li></a>
         </ul>
         <div class="slider__container">
             <div class="slider">
@@ -39,27 +47,230 @@
                 <a class="slide"><img src="images/13.png" alt="slide 14"></a>
             </div>
         </div>
+        <nav class="mobile__menu">
+            <ul class="menu__list">
+            <a href="#feed"><li class="nav__link mb">Список комбикорма</li></a>
+            <a href="#aboutUs"><li class="nav__link mb">О нас</li></a>
+            <a href=""><li class="nav__link mb">Связаться с нами</li></a>
+            <a href=""><li class="nav__link mb">Доставка</li></a>
+        </ul>
+        </nav>
     </header>
-    <main>
+
+    <!--Модальное окно-->
+
+    <div class="modal__window">
+        <button class="modal__btn" type="button"><img class="x__icon" src="images/icons/xIcon.svg" width="40" height="40"></button>
+        <div class="modal">
+            <div class="input">
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Фамилия</label>
+                    <input type="text" id="user-login" class="modal__field" placeholder="Введите вашу фамилию">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Имя</label>
+                    <input type="text" id="user-login" class="modal__field" placeholder="Введите ваше имя">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Отчество(необязательно)</label>
+                    <input type="text" id="user-login" class="modal__field" placeholder="Отчество(необязательно)">
+                </div>
+                <div class="modal__input">
+                    <label for="user-input" class="modal__label">Ваш email</label>
+                    <input type="email" id="email" class="modal__field" placeholder="Введите вашу почту...">
+                </div>
+                <div class="comment__modal">
+                            <label for="user-input-c" class="input-label-с">Комментарий</label>
+                            <textarea id="user-input-c" class="input__area"
+                                placeholder="Здесь вы можете подробно все расписать..."></textarea>
+                </div>
+                <div class="modal__buttons">
+                    <button class="delete" type="submit" id="modalD">Очистить</button>
+                    <button class="send" type="submit" id="modalS">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <main class="main">
 
         <section class="container">
             <h2 class="section__name">Популярные товары</h2>
             <div class="favorite">
                 <div class="uk__text">
-                    <p class="text"><span>  </span>Мы сотрудничаем с компанией “Южная корона” которая поставляет нам
+                    <p><span>  </span>Мы сотрудничаем с компанией “Южная корона”, которая поставляет нам
                         готовый корм для свиней, коров, птиц. Обычно разделен на старт, рост, и
                         финиш(разнится в названиях для разных животных). Самый расходумый товар в
                         нашем магазине. У него хорошие отзывы и богатая витаминами смесь круп и трав.</p>
                 </div>
-                <img src="images/Ассортимент.png">
+                <img src="images/Ассортимент.png" style="border-radius: 18px;">
             </div>
-
+            <ul class="next__favorite">
+                <li class="product">
+                    <img class="product__img" src="images/гл1.png">
+                    <p>Корм для кроликов, свиней и птиц от компании Purina.</p>
+                </li>
+                <li class="product">
+                    <img class="product__img" src="images/гл2.png">
+                    <p>Корм для курей, гусей, уток, индюков, разной фракции.</p>
+                </li>
+                <li class="product">
+                    <img class="product__img" src="images/гл3.png">
+                    <p>Взрослые курицы и петухи породы доминат возрастом от 3-4х месяцев.</p>
+                </li>
+            </ul>
         </section>
-
+        <section class="container">
+            <h2 class="section__name">Так же мы продаем</h2>
+            <div class="prod">
+                <ul class="prod__list">
+                <li><h3>Корма для</h3></li>
+                <li><p>Попугаев</p></li>
+                <li><p>Грызунов</p></li>
+                <li><p>Черепах</p></li>
+                <li><p>Декоративных рыбок</p></li>
+                <li><p>Кошек</p></li>
+                <li><p>Собак</p></li>
+            </ul>
+            <ul class="prod__list">
+                <li><h3>Такие товары как</h3></li>
+                <li><p>Клетки для кошек, птиц, грызунов</p></li>
+                <li><p>Ошейники и цепи</p></li>
+                <li><p>Препараты от блох</p></li>
+                <li><p>Поилки и кормушки</p></li>
+                <li><p>Сладости для дрессировки</p></li>
+                <li><p>Игрушки для собак и кошек</p></li>
+            </ul>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="section__name" id="feed">Список комбикорма</h2>
+            <ul class="feed__list">
+                <li class="intact__feed">
+                    <div class="feedImg__list">
+                        <img src="images/0.png">
+                        <img src="images/1.png">
+                        <img src="images/2.png">
+                        <img src="images/4.png">
+                        <img src="images/11.png">
+                        <img src="images/12.png">
+                    </div>
+                    <div class="feed__text">
+                        <h3 class="feed__category">Целые корма</h3>
+                        <p>Недробленые культуры для сельскохозяйственных животных</p>
+                    </div>
+                </li>
+                <li class="crushed__feed">
+                    <div class="feedImg__list">
+                        <img src="images/3.png">
+                        <img src="images/5.png">
+                        <img src="images/8.png">
+                        <img src="images/10.png">
+                        <img src="images/13.png">
+                        <img src="images/12.png">
+                    </div>
+                    <div class="feed__text">
+                        <h3 class="feed__category">Дробленые корма</h3>
+                        <p>Готовые корма разной фракции все видов птиц, свиней и скота.</p>
+                    </div>
+                </li>
+                <li class="another__feed">
+                    <div class="feedImg__list">
+                        <img src="images/6.png">
+                        <img src="images/7.png">
+                        <img src="images/9.png">
+                        <img src="images/3.png">
+                        <img src="images/4.png">
+                        <img src="images/5.png">
+                    </div>
+                    <div class="feed__text">
+                        <h3 class="feed__category">Другие виды с/x корма</h3>
+                        <p>Корма для рыбы, трамбованные культуры, гранулы и тд.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="container">
+            <h2 class="section__name">Новости</h2>
+            <div class="chickens">
+                <p class="ch__text">Мы продаем цыплят бройлров, доминантов, уток и гусей. Птицу привозят с доверенного 
+                    инкубатора где за ними ведется четкий контроль</p>
+                <img src="images/цыплята.png">
+            </div>
+            <div class="new__products">
+                <h3>Новые товары у нас в продаже</h3>
+                <img class="banner" src="images/0.png"> 
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="section__name" id="aboutUs">О нас</h2>
+            <div class="aboutUs">
+                <video class="aboutUs__video" src="images/0.png"></video>
+                <p class="aboutUs__text">Наш магазин специализируется не только на с/х кормах но и товаров
+                     для ваших любимых питомцев. Мы всегда рады новым клиентам и занимаемся доставкой до 
+                     дома. Так же мы прокунсультируем вас в использовании препаратов и витаминов для с/х
+                      и домашних животных.</p>
+            </div>
+            <div class="contacts__map">
+                <p>Как нас найти</p>
+                <a class="contact__number" href="#">Номер для доставки: 8 (989) - *** - ** - **</a>
+            </div>
+            <div class="map__container">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d406.79264917834814!2d39.874946834347426!3d44.75901363291713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1747337049027!5m2!1sru!2sru"
+                    width="1090" height="862" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="container">
+            <ul class="comments">
+                <li class="comment">
+                    <img src="images/icons/inc.png" width="80" height="80">
+                    <ul>
+                        <li><p class="data">06.05.25</p></li>
+                        <li><p class="author">Александр К.</p></li>
+                    </ul>
+                    <p class="comment__text">В магазине есть большой ассортимент. Купил все для своей
+                        собаки.</p>
+                </li>
+                <li class="comment">
+                    <img src="images/icons/inc.png" width="80" height="80">
+                    <ul>
+                        <li><p class="data">19.05.25</p></li>
+                        <li><p class="author">Наталья С.</p></li>
+                    </ul>
+                    <p class="comment__text">Большой выбор корма для домашних питомцев. Понравилось что есть клетки для переноски</p>
+                </li>
+                <li class="comment">
+                    <img src="images/icons/inc.png" width="80" height="80">
+                    <ul>
+                        <li><p class="data">19.05.25</p></li>
+                        <li><p class="author">Елена В.</p></li>
+                    </ul>
+                    <p class="comment__text">Купила цыплят и утят на заказ, мне сразу подсказали как содержать и продали хороший корм</p>
+                </li>
+            </ul>
+        </section>
     </main>
     <script src="js/slider.js"></script>
     <footer>
+        <div class="footer__contacts">
+            <p class="contact_f">Номер для связи с магазином</p>
+            <p class="contact_f">8 (989) - *** - ** - **</p>
+            <img class="footer__gif" src="images/icons/ИнвертЛого.svg">
+        </div>
+        <div class="footer_c">
+            <button class="rate__btn" type="button" id="formOpen">Оставить отзыв о магазине</button>
+            <a class="footer__raport" href="images/цыплята.png">Отчет</a>
+        </div>
+        <div class="deweloped">
+            <p class="developer">Разработчик: Крючков Д.</p>
+            <p class="organization">“ЧУПОО Бизнес и Право”</p>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

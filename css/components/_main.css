@@ -6,3 +6,326 @@
     display: flex;
     justify-content: space-between;
 }
+
+.next__favorite {
+    display: flex;
+    margin: 75px auto 0 auto;
+    gap: 50px;
+}
+
+.product {
+    display: flex;
+    max-width: 461px;
+    gap: 14px;
+    flex-direction: column;
+}
+
+.product__img {
+    border-radius: 8px;
+}
+
+.prod {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.prod__list {
+    gap: 3px;
+    max-width: 470px;
+}
+
+.feed__list {
+    display: flex;
+    max-width: 1270px;
+    flex-direction: column;
+    gap: 45px;
+    margin: 0 auto;
+}
+
+.intact__feed{
+    display: flex;
+}
+
+.crushed__feed{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.another__feed{
+    display: flex;
+}
+
+.feedImg__list {
+    display: flex;
+    max-width: 784px;
+    gap: 11px;
+    flex-wrap: wrap;
+}
+
+.feed__text {
+    margin: 0 0 0 25px;
+    max-width: 390px;
+}
+
+.feed__category {
+    margin: 20px 0 45px 0;
+}
+
+.chickens {
+    display: flex;
+    max-width: 882px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.ch__text {
+    max-width: 404px;
+}
+
+.new__products {
+    margin: 75px 0 0 0;
+}
+
+.banner {
+    background-color: gray;
+    width: 1200px;
+    height: 200px;
+    margin: 55px auto 0 auto;
+}
+
+.aboutUs {
+    display: flex;
+    max-width: 1200px;
+    gap: 50px;
+    margin: 0 auto;
+}
+
+.aboutUs__video {
+    background-color: gray;
+    width: 700px;
+    height: 330px;
+}
+
+.aboutUs__text {
+    margin: auto;
+}
+
+.contacts__map {
+    display: flex;
+    max-width: 1090px;
+    padding: 0 20px;
+    margin: 90px auto 0 auto;
+    justify-content: space-between;
+}
+
+.contact__number {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.map__container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1090px;
+}
+
+.map {
+    background-color: gray;
+    width: 1090px;
+    height: 525px;
+}
+
+.comments {
+    display: flex;
+    gap: 80px;
+    max-width: 1242px;
+    margin: 0 auto;
+}
+
+.comment {
+    display: flex;
+    max-width: 360px;
+    flex-wrap: wrap;
+}
+
+.data {
+    margin: 15px 0 10px 20px;
+    font-size: 18px;
+}
+
+.author {
+    margin: 0 0 0 20px;
+    font-size: 25px;
+}
+
+.comment__text {
+    margin: 15px 0 0 10px;
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .favorite {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    .next__favorite {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 1024px) {
+    .crushed__feed {
+        justify-content: space-between;
+    }
+    .feedImg__list {
+        max-width: 520px;
+    }
+    .aboutUs {
+        flex-direction: column;
+        align-items: center;
+        max-width: 870px;
+        text-align: justify;
+    }
+    .contacts__map p {
+        font-size: 22px;
+    }
+    .contact__number {
+        font-size: 24px;
+    }
+    .comments {
+        gap: 30px;
+    }
+    .data {
+        font-size: 13px;
+    }
+    .author {
+        font-size: 22px;
+        margin: 0 0 0 13px;
+    }
+    .comment__text {
+        margin: 10px 0 0 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feed__list {
+        gap: 20px;
+    }
+    .feedImg__list img {
+        width: 47%;
+    }
+    .feedImg__list {
+        max-width: 350px;
+    }
+    .feed__text {
+        margin: 0 0 0 15px;
+        max-width: 390px;
+    }
+    .feed__text {
+        max-width: 300px;
+    }
+    .comments {
+        min-width: min-content;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f3f3f3;
+        padding: 15px;
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 700px) {
+    .aboutUs__video {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+    .chickens img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .feedImg__list {
+        gap: 4px;
+    }
+    .feed__list li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .chickens img {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+    }
+    .feed__category {
+        margin: 5px 0 10px 0;
+    }
+    .prod {
+        gap: 20px;
+    }
+    .aboutUs {
+        gap: 18px;
+    }
+    .contacts__map {
+        gap: 20px;
+    }
+    .contacts__map p {
+        font-size: 18px;
+    }
+    .contact__number {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .chickens img {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+    }
+    .feed__category {
+        margin: 5px 0 10px 0;
+    }
+    .contacts__map p {
+        font-size: 12px;
+    }
+    .contact__number {
+        font-size: 16px;
+    }
+    .contact__number {
+        font-size: 14px;
+    }
+    .comments {
+        gap: 20px;
+    }
+    .comment img {
+        width: 60px;
+        height: 60px;
+    }
+    .data {
+        font-size: 10px;
+    }
+    .author {
+        font-size: 18px;
+        margin: 0 0 0 13px;
+    }
+    .comment__text {
+        margin: 10px 0 0 8px;
+        font-size: 18px;
+    }
+}
